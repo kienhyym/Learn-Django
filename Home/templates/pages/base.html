@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% load staticfiles %}
+   <link rel="stylesheet" href="{% static 'bootstrap-5.0.0/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+   <div class='col-3 bg-primary'>
+   <span class = 'title-home'>bootstrap======primary====></span>
+   </div>
+   <div class='col-3 bg-danger'>
+   <span>bootstrap=======danger===></span>
+   </div>
+   {% block content %}
+  
+   {% endblock %}
+   <h1>footer==========></h1>
+</body>
+</html>

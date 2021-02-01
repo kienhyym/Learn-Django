@@ -1,0 +1,14 @@
+{% extends "pages/base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<h1 >Danh sách bài viết</h1>
+<h1 >=>>>List</h1>
+{% for post in Posts %}
+   <h4>date:{{post.date|date:'d/m/Y'}}  <a href="/redirect?Id=">{{post.title}}</a></h4>
+{% endfor %}
+
+{% endblock %}
